@@ -1,0 +1,38 @@
+<h1 class='page-header'>
+	Results
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_project_path,
+            :class => 'btn btn-primary pull-right' %>
+</h1>
+
+<div class='row'>
+	<% @projects.each do |project| %>
+	  <a href='<%=project.public_results_file%>' >
+		<div class='dash-unit' style="background-color: <%= rgb_values(project.last_result)%>">
+			<h1><%= project.name.capitalize %></h1>
+			<h2><%= project.result %></h2>
+			<div class='branch'><%= project.branch %></div>
+			<div class='commit'><%= project.last_commit %></div>
+			<div class='date'><%= project.last_run%></div>
+		</div>
+	  </a>
+
+	<% end %>
+
+	<div class='dash-unit'>
+		<div class='date'>2013/02/21 10:20:21</div>
+		<h1>Project name</h1>
+		<h2>Percentage</h2>
+	</div>
+
+	<div class='dash-unit'>
+		<h1>Project name</h1>
+		<h2>Percentage</h2>
+	</div>
+</div>
+
+<div class='row'>
+	<div class='dash-unit'>
+		even more
+	</div>
+</div>

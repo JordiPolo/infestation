@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  repository: MyString
+  last_run: 2014-06-14
+  last_result: 9.99
+
+two:
+  repository: MyString
+  last_run: 2014-06-14
+  last_result: 9.99

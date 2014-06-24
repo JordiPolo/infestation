@@ -1,0 +1,58 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dash-unit {
+	float: left;
+	width:20%;
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	border: 1px solid #383737;
+	background-color: #3d3d3d;
+	color:white;
+	height: 180px;
+	margin: 20px;
+	position:relative;
+}
+
+.dash-unit h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	padding-top:10px;
+	padding-left:5px;
+	margin-top:20px;
+	text-align:center;
+}
+
+.dash-unit h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	padding-top:10px;
+	padding-left:5px;
+	margin-top:2px;
+	text-align:center;
+}
+
+.dash-unit .date {
+	position:absolute;
+	bottom: 0px;
+	right: 10px;
+}
+.dash-unit .commit {
+	position:absolute;
+	bottom: 20px;
+	right: 10px;
+}
+.dash-unit .branch {
+	position:absolute;
+	bottom: 40px;
+	right: 10px;
+}
